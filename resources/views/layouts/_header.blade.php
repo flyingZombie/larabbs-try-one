@@ -39,10 +39,15 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li>
+                                <a href="{{ route('users.edit', Auth::id()) }}">
+                                    Editing profile
+                                </a>
+                            </li>
+                            <li>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
-                                    退出登录
+                                    log out
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
